@@ -1,16 +1,16 @@
 import unittest
-import sys
+import sys                           #riconosce il sistema operativo dove stai lavorando
 
 import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
-if sys.flags.interactive:
-    plt.ion()
+if sys.flags.interactive:           #permette di isolare lo script dalla cartella dove si trova lo stesso in modo che può essere importato (considerano che lo scopo finale è quello di creare un pacchetto da importare nei vari programmi)
+    plt.ion()                       #attiva l'interactive-> mette "on" sulla modalità interactive
 
 from splrand.pdf import ProbabilityDensityFunction
 
 
-class testPdf(unittest.TestCase):
+class testPdf(unittest.TestCase):   #facendo la classe, con l'erede "unittest.TestCase", posso runnare tutto in una botta
 
     """Unit test for the pdf module.
     """
@@ -92,5 +92,5 @@ class testPdf(unittest.TestCase):
 
 
 
-if __name__ == '__main__':
-    unittest.main(exit=not sys.flags.interactive)
+if __name__ == '__main__':                                #come fare il "main" in C
+    unittest.main(exit=not sys.flags.interactive)         #runno il test, non sappiamo cosa significa la roba tra parentesi
