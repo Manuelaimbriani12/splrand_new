@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # splrand_new documentation build configuration file, created by
-# sphinx-quickstart on Sun Oct 27 17:59:32 2019.
+# sphinx-quickstart on Mon Oct 28 16:15:15 2019.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -17,14 +17,15 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('.'))
 import os
 import sys
 package_name = 'splrand'
 package_root = os.path.abspath('..')
 sys.path.insert(0, package_root)
 sys.path.insert(0, os.path.join(package_root, package_name))
-sys.path.insert(0, os.path.abspath('.'))
-
 
 # -- General configuration ------------------------------------------------
 
@@ -57,9 +58,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = package_name
-copyright = '2019, Manuela'
-author = 'Manuela'
+project = 'splrand_new'
+copyright = '2019, manuela'
+author = 'manuela'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -151,7 +152,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'splrand_new.tex', 'splrand\\_new Documentation',
-     'Manuela', 'manual'),
+     'manuela', 'manual'),
 ]
 
 
